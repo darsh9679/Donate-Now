@@ -10,11 +10,12 @@ a {
 /* Donation cards container */
 .donation-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible columns */
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  justify-items: center; /* Center the items by default */
 }
 
 /* Donation card styles */
@@ -152,4 +153,25 @@ a {
     flex-direction: column;
     gap: 0;
   }
+}
+
+/* Adjustments for the flexible layout */
+.donation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible columns */
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center; /* Center the items by default */
+}
+
+/* Ensure that the 4th card (and all similar) goes to a new row */
+.donation-cards > .donation-card:nth-child(4n+1) {
+  grid-column: span 1; 
+}
+
+/* Adjust the last row behavior when there are fewer than 4 cards */
+.donation-cards > .donation-card:nth-last-child(-n+3) {
+  grid-column: span 1; /* Ensure last 3 cards are centered if there are fewer than 4 cards */
 }
