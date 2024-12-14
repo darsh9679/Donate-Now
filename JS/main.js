@@ -16,7 +16,7 @@ class SpecialHeader extends HTMLElement {
             <li class="dropdown">
             <a href="#" class="dropdown-trigger">Our Activities <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="index.html">Projects</a></li>
                             <li><a href="events.html">Events</a></li>
                         </ul>
                     </li>
