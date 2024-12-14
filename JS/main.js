@@ -20,7 +20,7 @@ class SpecialHeader extends HTMLElement {
                             <li><a href="events.html">Events</a></li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html">Services</a></li>
                 </ul>
                 <div class="nav-buttons">
                     <a href="donate-main.html"><button  class="btn donate-btn">Donate</button></a>
